@@ -138,7 +138,7 @@ open class MMLoadingButton: UIButton {
         groupA.animations = [shrink,corner]
         groupA.duration = 0.3
         groupA.isRemovedOnCompletion = false
-        groupA.fillMode = kCAFillModeForwards
+        groupA.fillMode = CAMediaTimingFillMode.forwards
         groupA.delegate = self
         groupA.setValue(shrinkKey, forKey: "Animation")
         self.layer.add(groupA, forKey: "Animation")
